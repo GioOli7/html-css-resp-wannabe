@@ -73,9 +73,11 @@ img {
 }
 
 
-/* **************************************************************
+/****************************************************************
                   RESPONSIVE
 *****************************************************************/
+
+/* *********ESERCIZIO EFETTIVO*************/
 
 /* desktop first - < 420px */
 
@@ -130,3 +132,66 @@ img {
     margin-bottom: 40px;
   }
 }
+
+
+/* ESERCIZIO BONUS */
+/* desktop first  420px ~ 991px */
+
+@media screen and (min-width: 420px) and (max-width: 991px){
+  .container {
+    min-width: 420px;
+    max-width: 991px;
+    margin-bottom: 70px;
+  }
+  
+  .row {
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: 150px;
+    margin-top: 30px;
+  }
+
+  /* BLOCCO LEZIONI */
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: calc(50% - 10px);
+    float: left;
+  }
+
+  #lezioni .row>.left {
+    margin-right: 10px;
+  }
+
+  /* BLOCCO STEPS */
+  #steps .row>.left {
+    margin-right: 10px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central {
+    float: left;
+    width: calc(100% / 2 - 10px);
+    margin-bottom: 40px;
+  }
+
+  #steps .row>.right {
+    float: none;
+    margin: auto;
+  }
+}
+  
+  /******Fine bonus****/
+
+
+
+
+
+
+
+
+
+
